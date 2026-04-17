@@ -23,7 +23,7 @@ Crie estas pastas:
 - `E:\docling-stack\documentos`
 - `E:\docling-stack\outputs`
 - `E:\docling-stack\models`
-- `E:\docling-stack\app` // para os arquivos de configuração docker.compose, dockfile e algoritmo python
+- `E:\docling-stack\app` // para os arquivos de configuração docker.compose.yml, dockerfile, requirements-docker.txt e docling_worker.py
 
 ## Arquivos deste pacote
 - `Dockerfile`
@@ -44,7 +44,7 @@ Ele reprocessa apenas quando:
 - o conteúdo/tamanho/data de modificação do arquivo mudou.
 
 ## Como subir
-No PowerShell, dentro da pasta onde estiverem esses arquivos:
+No PowerShell, dentro da pasta onde estiverem esses arquivos (pasta app):
 
 ```powershell
 docker compose up -d --build
