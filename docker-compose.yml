@@ -1,0 +1,16 @@
+services:
+  docling-stack:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: docling-stack
+    restart: unless-stopped
+    volumes:
+      - "E:/docling-stack/documentos:/data/input"
+      - "E:/docling-stack/outputs:/data/output"
+      - "E:/docling-stack/models:/models"
+    environment:
+      INPUT_DIR: /data/input
+      OUTPUT_DIR: /data/output
+      RECURSIVE: "true"
+      SCAN_INTERVAL_SECONDS: "30"
